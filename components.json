@@ -1,1 +1,1471 @@
-
+{
+  "success": true,
+  "message": "Page fetched successfully",
+  "data": {
+    "header": {
+      "id": 5,
+      "name": "header",
+      "type": "header",
+      "is_global": true,
+      "is_active": true,
+      "endpoint_id": null,
+      "components": [
+        {
+          "id": 357,
+          "position": 0,
+          "data": {
+            "url": "https://www.boom.yugme.com/"
+          },
+          "definition": {
+            "id": 5,
+            "name": "header footer logo",
+            "slug": "header-footer-logo",
+            "fields": [
+              {
+                "key": "url",
+                "type": "url",
+                "label": "Logo Url"
+              }
+            ],
+            "validation_rules": {
+              "url": "required|string"
+            },
+            "allowed_layout_types": [
+              "footer",
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:25:34.000000Z",
+            "updated_at": "2026-02-24T11:25:34.000000Z"
+          }
+        },
+        {
+          "id": 358,
+          "position": 1,
+          "data": {
+            "features": [
+              {
+                "title": "Products",
+                "options": [
+                  {
+                    "url": "#message_templates",
+                    "Name": "Message Templates",
+                    "icon": "Puzzle"
+                  },
+                  {
+                    "url": "#campaigns",
+                    "Name": "Campaigns",
+                    "icon": "MegaphoneIcon"
+                  },
+                  {
+                    "url": "#media_library",
+                    "Name": "Media Library",
+                    "icon": "FolderOpen"
+                  },
+                  {
+                    "url": "#live_chat",
+                    "Name": "Live Chat",
+                    "icon": "WhatsappLogo"
+                  },
+                  {
+                    "url": "#automations",
+                    "Name": "Automations",
+                    "icon": "Rocket"
+                  },
+                  {
+                    "url": "#team_management",
+                    "Name": "Team Management",
+                    "icon": "Users"
+                  },
+                  {
+                    "url": "#analytics",
+                    "Name": "Analytics & Reports",
+                    "icon": "BarChart3"
+                  },
+                  {
+                    "url": "#catalog",
+                    "Name": "Catalog Management",
+                    "icon": "Package"
+                  },
+                  {
+                    "url": "#contacts",
+                    "Name": "Contact Management",
+                    "icon": "UserCircle"
+                  },
+                  {
+                    "url": "#third_party",
+                    "Name": "API Integration",
+                    "icon": "Plug"
+                  },
+                  {
+                    "url": "#manage_leads",
+                    "Name": "Leads Management Center",
+                    "icon": "Users"
+                  },
+                  {
+                    "url": "#support",
+                    "Name": "Support & Feedback Center",
+                    "icon": "LifeBuoy"
+                  },
+                  {
+                    "url": "#webhook",
+                    "Name": "Webhook Integration Support",
+                    "icon": "Webhook"
+                  }
+                ]
+              }
+            ]
+          },
+          "definition": {
+            "id": 6,
+            "name": "header feature dropdown",
+            "slug": "header-feature-dropdown",
+            "fields": [
+              {
+                "key": "features",
+                "type": "array",
+                "label": "Features",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "options",
+                    "type": "array",
+                    "label": "Options",
+                    "children": [
+                      {
+                        "key": "icon",
+                        "type": "text",
+                        "label": "Icon"
+                      },
+                      {
+                        "key": "Name",
+                        "type": "text",
+                        "label": "Name"
+                      },
+                      {
+                        "key": "url",
+                        "type": "url",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "validation_rules": {
+              "features.*.title": "required|string",
+              "features.*.options.*.url": "required|string",
+              "features.*.options.*.Name": "required|string",
+              "features.*.options.*.icon": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:35:10.000000Z",
+            "updated_at": "2026-02-24T11:32:22.000000Z"
+          }
+        },
+        {
+          "id": 359,
+          "position": 2,
+          "data": {
+            "solutions": [
+              {
+                "title": "industry",
+                "options": [
+                  {
+                    "url": "#our_industry",
+                    "icon": "ShoppingCart",
+                    "name": "E-commerce",
+                    "description": "Boost sales & reduce cart abandonment"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "GraduationCap",
+                    "name": "Education",
+                    "description": "Engage students & parents effectively"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "Landmark",
+                    "name": "Finance & Banking",
+                    "description": "Secure & instant customer updates"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "Heart",
+                    "name": "Healthcare",
+                    "description": "Improve patient engagement"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "Building2",
+                    "name": "Real Estate",
+                    "description": "Convert leads faster"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "Plane",
+                    "name": "Travel & Hospitality",
+                    "description": "Enhance guest experience"
+                  }
+                ]
+              },
+              {
+                "title": "products",
+                "options": [
+                  {
+                    "url": "#our_products",
+                    "icon": "Sparkles",
+                    "name": "AI Automation Generator",
+                    "description": "AI Automation Generator"
+                  },
+                  {
+                    "url": "#our_products",
+                    "icon": "Bot",
+                    "name": "Chatbot Automation",
+                    "description": "Chatbot Automation"
+                  },
+                  {
+                    "url": "#our_products",
+                    "icon": "Banknote",
+                    "name": "WhatsApp Payments",
+                    "description": "WhatsApp Payments"
+                  },
+                  {
+                    "url": "#our_products",
+                    "icon": "Workflow",
+                    "name": "Dynamic Form Generator",
+                    "description": "Dynamic Form Generator"
+                  },
+                  {
+                    "url": "#our_products",
+                    "icon": "Terminal",
+                    "name": "API Developer Tools",
+                    "description": "API Developer Tools"
+                  },
+                  {
+                    "url": "/whatsapp-link-generator",
+                    "icon": "QrCode",
+                    "name": "WhatsApp Link & QR",
+                    "description": "WhatsApp Link & QR"
+                  },
+                  {
+                    "url": "/config-whatsapp-chat",
+                    "icon": "WhatsappLogo",
+                    "name": "WhatsApp Button",
+                    "description": "WhatsApp Button"
+                  }
+                ]
+              }
+            ]
+          },
+          "definition": {
+            "id": 7,
+            "name": "header solutions dropdown",
+            "slug": "header-solutions-dropdown",
+            "fields": [
+              {
+                "key": "solutions",
+                "type": "array",
+                "label": "Solutions",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "options",
+                    "type": "array",
+                    "label": "Options",
+                    "children": [
+                      {
+                        "key": "icon",
+                        "type": "text",
+                        "label": "Icon"
+                      },
+                      {
+                        "key": "name",
+                        "type": "text",
+                        "label": "Name"
+                      },
+                      {
+                        "key": "description",
+                        "type": "text",
+                        "label": "Description"
+                      },
+                      {
+                        "key": "url",
+                        "type": "url",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "validation_rules": {
+              "solutions.*.title": "required|string",
+              "solutions.*.options.*.url": "required|string",
+              "solutions.*.options.*.icon": "required|string",
+              "solutions.*.options.*.name": "required|string",
+              "solutions.*.options.*.description": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T12:16:19.000000Z",
+            "updated_at": "2026-02-24T12:16:19.000000Z"
+          }
+        },
+        {
+          "id": 360,
+          "position": 3,
+          "data": {
+            "url": "/pricing",
+            "name": "pricing"
+          },
+          "definition": {
+            "id": 9,
+            "name": "header link",
+            "slug": "header-link",
+            "fields": [
+              {
+                "key": "name",
+                "type": "text",
+                "label": "name"
+              },
+              {
+                "key": "url",
+                "type": "text",
+                "label": "URL"
+              }
+            ],
+            "validation_rules": {
+              "url": "required|string",
+              "name": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T12:46:15.000000Z",
+            "updated_at": "2026-02-24T12:46:15.000000Z"
+          }
+        },
+        {
+          "id": 361,
+          "position": 4,
+          "data": {
+            "features": [
+              {
+                "title": "Free Tools",
+                "options": [
+                  {
+                    "url": "/whatsapp-link-generator",
+                    "Name": "Whatsapp Link & QR Generator",
+                    "icon": "QrCode"
+                  },
+                  {
+                    "url": "/config-whatsapp-chat",
+                    "Name": "Whatsapp Button",
+                    "icon": "WhatsappLogo"
+                  }
+                ]
+              }
+            ]
+          },
+          "definition": {
+            "id": 6,
+            "name": "header feature dropdown",
+            "slug": "header-feature-dropdown",
+            "fields": [
+              {
+                "key": "features",
+                "type": "array",
+                "label": "Features",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "options",
+                    "type": "array",
+                    "label": "Options",
+                    "children": [
+                      {
+                        "key": "icon",
+                        "type": "text",
+                        "label": "Icon"
+                      },
+                      {
+                        "key": "Name",
+                        "type": "text",
+                        "label": "Name"
+                      },
+                      {
+                        "key": "url",
+                        "type": "url",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "validation_rules": {
+              "features.*.title": "required|string",
+              "features.*.options.*.url": "required|string",
+              "features.*.options.*.Name": "required|string",
+              "features.*.options.*.icon": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:35:10.000000Z",
+            "updated_at": "2026-02-24T11:32:22.000000Z"
+          }
+        },
+        {
+          "id": 362,
+          "position": 5,
+          "data": {
+            "features": [
+              {
+                "title": "Resources",
+                "options": [
+                  {
+                    "url": "https://www.boom.yugme.com/blog",
+                    "Name": "Blog",
+                    "icon": "BookOpenText"
+                  },
+                  {
+                    "url": "#faq",
+                    "Name": "FAQ",
+                    "icon": "CircleQuestionMark"
+                  }
+                ]
+              }
+            ]
+          },
+          "definition": {
+            "id": 6,
+            "name": "header feature dropdown",
+            "slug": "header-feature-dropdown",
+            "fields": [
+              {
+                "key": "features",
+                "type": "array",
+                "label": "Features",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "options",
+                    "type": "array",
+                    "label": "Options",
+                    "children": [
+                      {
+                        "key": "icon",
+                        "type": "text",
+                        "label": "Icon"
+                      },
+                      {
+                        "key": "Name",
+                        "type": "text",
+                        "label": "Name"
+                      },
+                      {
+                        "key": "url",
+                        "type": "url",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "validation_rules": {
+              "features.*.title": "required|string",
+              "features.*.options.*.url": "required|string",
+              "features.*.options.*.Name": "required|string",
+              "features.*.options.*.icon": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:35:10.000000Z",
+            "updated_at": "2026-02-24T11:32:22.000000Z"
+          }
+        },
+        {
+          "id": 363,
+          "position": 6,
+          "data": {
+            "url": "#contactus",
+            "name": "Contact Us"
+          },
+          "definition": {
+            "id": 9,
+            "name": "header link",
+            "slug": "header-link",
+            "fields": [
+              {
+                "key": "name",
+                "type": "text",
+                "label": "name"
+              },
+              {
+                "key": "url",
+                "type": "text",
+                "label": "URL"
+              }
+            ],
+            "validation_rules": {
+              "url": "required|string",
+              "name": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T12:46:15.000000Z",
+            "updated_at": "2026-02-24T12:46:15.000000Z"
+          }
+        },
+        {
+          "id": 364,
+          "position": 7,
+          "data": {
+            "url": "/login",
+            "name": "Login"
+          },
+          "definition": {
+            "id": 11,
+            "name": "header other",
+            "slug": "header-other",
+            "fields": [
+              {
+                "key": "name",
+                "type": "text",
+                "label": "Name",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "url",
+                "type": "text",
+                "label": "URL",
+                "required": false,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "url": "nullable|string",
+              "name": "nullable|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-25T06:59:59.000000Z",
+            "updated_at": "2026-02-25T06:59:59.000000Z"
+          }
+        },
+        {
+          "id": 365,
+          "position": 8,
+          "data": {
+            "url": "/signup",
+            "name": "Sign Up Free"
+          },
+          "definition": {
+            "id": 11,
+            "name": "header other",
+            "slug": "header-other",
+            "fields": [
+              {
+                "key": "name",
+                "type": "text",
+                "label": "Name",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "url",
+                "type": "text",
+                "label": "URL",
+                "required": false,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "url": "nullable|string",
+              "name": "nullable|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-25T06:59:59.000000Z",
+            "updated_at": "2026-02-25T06:59:59.000000Z"
+          }
+        }
+      ],
+      "created_at": "2026-02-21T13:43:05.000000Z",
+      "updated_at": "2026-02-21T13:43:05.000000Z"
+    },
+    "page": {
+      "id": 21,
+      "title": "WhatsApp Login: Easy Guide to Using WhatsApp Web & Desktop (2026)",
+      "slug": "whatsapp-login-easy-guide-to-using-whatsapp",
+      "description": null,
+      "image": null,
+      "endpoint": "blog",
+      "updated_at": "2026-03-07T09:44:14.000000Z",
+      "components": [
+        {
+          "id": 5420,
+          "position": 0,
+          "data": {
+            "title": [
+              {
+                "url": null,
+                "value": "WhatsApp Login: Easy Guide to Using WhatsApp Web & Desktop (2026)"
+              }
+            ]
+          },
+          "definition": {
+            "id": 26,
+            "name": "blog title",
+            "slug": "blog-title",
+            "fields": [
+              {
+                "key": "title",
+                "type": "array",
+                "label": "Title",
+                "children": [
+                  {
+                    "key": "value",
+                    "type": "text",
+                    "label": "Enter Value",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "url",
+                    "type": "text",
+                    "label": "Enter URL",
+                    "required": false,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "title.*.url": "nullable|string",
+              "title.*.value": "required|string"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": null,
+            "is_default": true,
+            "created_at": "2026-02-27T12:56:10.000000Z",
+            "updated_at": "2026-02-26T13:18:22.000000Z"
+          }
+        },
+        {
+          "id": 5421,
+          "position": 1,
+          "data": {
+            "image": "https://yugme.s3.ap-south-1.amazonaws.com/media/org_/dd7fec99-7f8c-45bd-b391-c9edf16909a8.png",
+            "title": "WhatsApp Login: Easy Guide to Using WhatsApp Web & Desktop (2026)",
+            "author": null,
+            "category": [
+              {
+                "category_url": "https://www.boom.yugme.com/category/comprehensive-guide",
+                "category_name": "Cpmprehensive Guide"
+              }
+            ],
+            "read_time": null,
+            "description": "Looking to log in to WhatsApp Web or WhatsApp Desktop without any hassle?\n\nYou’ve come to the right place.\n\nThis comprehensive guide covers WhatsApp login for Android, iPhone, and PC users — whether or not you have your phone handy.\n\nWith recent updates, WhatsApp now lets you log in to both WhatsApp and WhatsApp Business App on up to 5 devices simultaneously (1 mobile device plus 4 PCs). Additionally, you can manage multiple accounts within the same app.\n\nIn this quick guide, we’ll also explain how to log in using just your phone number and show how businesses can grow with the WhatsApp Business API.\n\nNote: These instructions apply to both the WhatsApp App and WhatsApp Business App.",
+            "verified_by": null
+          },
+          "definition": {
+            "id": 24,
+            "name": "blog head",
+            "slug": "blog-head",
+            "fields": [
+              {
+                "key": "title",
+                "type": "textarea",
+                "label": "Title",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "description",
+                "type": "richtext",
+                "label": "Description",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "image",
+                "type": "image",
+                "label": "Image",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "author",
+                "type": "text",
+                "label": "Author",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "verified_by",
+                "type": "text",
+                "label": "Verified By",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "read_time",
+                "type": "text",
+                "label": "Read Time",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "category",
+                "type": "array",
+                "label": "Category",
+                "children": [
+                  {
+                    "key": "category_name",
+                    "type": "text",
+                    "label": "Category Name",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "category_url",
+                    "type": "text",
+                    "label": "Category URL",
+                    "required": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "image": "nullable|string",
+              "title": "required|string",
+              "author": "nullable|string",
+              "read_time": "nullable|string",
+              "description": "nullable|string",
+              "verified_by": "nullable|string",
+              "category.*.category_url": "required|string",
+              "category.*.category_name": "required|string"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": [],
+            "is_default": true,
+            "created_at": "2026-03-25T06:21:34.000000Z",
+            "updated_at": "2026-02-26T08:57:07.000000Z"
+          }
+        },
+        {
+          "id": 5422,
+          "position": 2,
+          "data": {
+            "notes": [
+              {
+                "note": "1. Logging into WhatsApp Web Using a Phone Number"
+              },
+              {
+                "note": "2. How to Log in to WhatsApp Web with an Android Device"
+              },
+              {
+                "note": "3. How to Access WhatsApp Web Using an iPhone"
+              },
+              {
+                "note": "4. Using WhatsApp Web Without a Smartphone"
+              },
+              {
+                "note": "5. Logging into WhatsApp Desktop on Windows and Mac"
+              },
+              {
+                "note": "6. Helpful Tips and Tricks for WhatsApp Login"
+              },
+              {
+                "note": "7. Introduction to the WhatsApp Business API"
+              }
+            ],
+            "title": "Table of Contents"
+          },
+          "definition": {
+            "id": 25,
+            "name": "blog key note",
+            "slug": "blog-key-note",
+            "fields": [
+              {
+                "key": "title",
+                "type": "text",
+                "label": "Title",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "notes",
+                "type": "array",
+                "label": "Add Notes",
+                "children": [
+                  {
+                    "key": "note",
+                    "type": "text",
+                    "label": "Enter Note",
+                    "required": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "title": "nullable|string",
+              "notes.*.note": "required|string"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-26T09:00:59.000000Z",
+            "updated_at": "2026-02-26T09:00:59.000000Z"
+          }
+        },
+        {
+          "id": 5423,
+          "position": 3,
+          "data": {
+            "description": [
+              {
+                "image": "https://yugme.s3.ap-south-1.amazonaws.com/media/org_/02a08127-5c70-476a-bd67-009a3917c28b.png",
+                "content": "**Logging into WhatsApp Web Using Your Phone Number**\n\nIn 2025, WhatsApp has made it easier than ever to access your account directly through a web browser. You can now log in to WhatsApp Web using your phone number, similar to how you sign in on your mobile device.\n\nFollow these simple steps to quickly access WhatsApp Web using your phone number:\n\n**1. Open WhatsApp Web on your computer**\nVisit web.whatsapp.com on your PC and select “Log in with phone number”, as shown in the image below.",
+                "image_title": null
+              },
+              {
+                "image": "https://yugme.s3.ap-south-1.amazonaws.com/media/org_/df01a72e-78da-4ef8-87d2-d08ea98a8bb6.png",
+                "content": "**2. Enter your WhatsApp phone number and click Next**\nType your registered WhatsApp phone number in the required field and select Next to continue the login process.",
+                "image_title": null
+              },
+              {
+                "image": "https://yugme.s3.ap-south-1.amazonaws.com/media/org_/88b8f86b-e576-49ad-9e6e-62c74db73cc6.png",
+                "content": "**3. Enter the code displayed on your screen in the WhatsApp mobile app**\nOnce you enter the login code shown on your browser into your WhatsApp mobile app, your chats will instantly appear on your web browser.",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**How to Log in to WhatsApp Web Using an iPhone**\n\nIf you are using an iPhone, the steps to access WhatsApp Web are slightly different from Android devices.\n\nFollow these simple steps to log in to WhatsApp Web from your iPhone:\n\n1. Open the WhatsApp or WhatsApp Business app on your iPhone.\n\n2. Tap on Settings at the bottom of the screen.\n\n3. Select Linked Devices.\n\n4. Tap Link a Device to open the QR code scanner.\n\n5. On your computer, open WhatsApp Web in your browser.\n\n6. A QR code will appear on the screen.\n\n7. Use your iPhone to scan the QR code displayed on the web page.\n\nOnce the QR code is scanned, your WhatsApp account will be connected to the browser, and you can start using WhatsApp Web instantly.",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Logging into WhatsApp Web Using a QR Code (Android Device)**\n\nTo access WhatsApp Web on your computer using an Android device, make sure you are already logged in to WhatsApp on your mobile phone. You will need to scan a QR code displayed on the web page to complete the login.\n\nFollow these steps to log in to WhatsApp Web using an Android device:\n\n1. Open the WhatsApp or WhatsApp Business app on your Android phone and tap the three dots in the top-right corner.\n\n2. Select Linked Devices from the menu.\n\n3. Tap Link a Device, which will open the QR code scanner on your phone.\n\n4. On your computer, open WhatsApp Web in your browser.\n\n5. A QR code will appear on the screen.\n\n6. Use your phone to scan the QR code displayed on the web page.\n\nOnce the QR code is scanned successfully, your WhatsApp account will be instantly connected to the browser, and your chats will appear on your computer.",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**4. Using WhatsApp Web Without a Smartphone**\n\nWith the latest updates to WhatsApp and WhatsApp Business, users can now continue using WhatsApp Web even when their smartphone is not actively connected. Previously, your phone had to stay online at all times for WhatsApp Web to work.\n\nTo set this up, follow these steps:\n\n1. Open the WhatsApp or WhatsApp Business app on your phone.\n\n2. Go to Settings.\n\n3. Tap Linked Devices.\n\n4. Select Link a Device, which will open the QR code scanner.\n\n5. On your computer, open WhatsApp Web in your browser.\n\n6. A QR code will appear on the screen.\n\n7. Scan the QR code using your phone.\n\nOnce the device is linked, you will be able to use WhatsApp Web on your computer even if your mobile phone is turned off or not connected to the internet.",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**5. Logging into WhatsApp Desktop on Windows and Mac**\nIf you prefer using WhatsApp on your computer without keeping a browser open, WhatsApp Desktop is a great option. It is a dedicated application for Windows and Mac that offers better performance, native notifications, and allows you to use WhatsApp even when your browser is closed.\n\nNote: Both WhatsApp Web and WhatsApp Desktop support login through QR code scanning and phone number verification, and they work with WhatsApp’s multi-device feature.\n**Step 1: Visit whatsapp.com/download or search for “WhatsApp” in the Microsoft Store.**",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Step 2: Click Download for Windows.**\n**Step 3: Open the WhatsAppSetup.exe file from your Downloads folder.**\n**Step 4: Follow the installation instructions on the screen.**\nAfter installation, the WhatsApp Desktop app will launch automatically.\n\nWhen the app opens, you will see a QR code displayed on the screen (in some regions, you may also have the option to log in using your phone number).\n\n**Step 5: Link both devices**\nTo link your phone:\n\n1. Open WhatsApp or WhatsApp Business on your mobile device.\n\n2. Go to Settings (on iPhone) or tap the three dots in the top-right corner (on Android).\n\n3. Select Linked Devices.\n\n4. Tap Link a Device.\n\n**Step 6: Scan the QR code shown on your computer using your phone.**\n\nOnce the QR code is scanned, your WhatsApp chats will instantly sync with the desktop application, and you can start using WhatsApp directly from your computer.",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**6. Helpful Tips and Tricks for WhatsApp Login**\n\nIf you’re having trouble logging into WhatsApp Web or Desktop, a few quick checks can often resolve the issue. Here are some simple solutions you can try:\n\n1. Check your internet connection\nEnsure that your phone has a stable internet connection, even if you are trying to access WhatsApp from your computer.\n\n2. Clear your browser cookies and cache\nSometimes stored cookies or cached data can cause login issues. Go to your browser settings and clear the cookies related to web.whatsapp.com.\n\n3. Update WhatsApp to the latest version\nUsing an outdated version of WhatsApp may prevent certain login features from working properly. Updating the app can usually fix this problem.\n\n4. Re-link your devices\nOpen WhatsApp on your phone and go to Settings \u003E Linked Devices. Select the device causing the issue, tap Log out, and then scan the QR code again to reconnect it.\n\n5. Check VPN or firewall settings\nIf you are using a VPN or a corporate firewall, it may block WhatsApp Web connections. Try disabling it temporarily and attempt the login again.\n\nIf the issue still persists, wait a few minutes and try again, as WhatsApp services may occasionally experience brief outages.\n\n**Want to Reach Global Audiences on WhatsApp?**\n\nFor small businesses and individuals, the WhatsApp Business App is a good option for communicating with customers.\n\nRead: How to Set Up a WhatsApp Business Account\n\nHowever, if you run a larger business and want to connect with customers at scale, the WhatsApp Business App may not be sufficient. It comes with several limitations that can restrict business growth and communication efficiency.\n\nSome of the key limitations include:\n\n1. Broadcast limit of 256 users, and messages only reach people who have saved your number in their contacts.\n\n2. No built-in analytics to measure campaign performance.\n\n3. No way to track agent performance or customer support activities.\n\n4. No chatbot integration for automating customer support.\n\n5. Limited integration options with third-party software or CRM systems.\n\n6. No support for automated notifications.\n\n7. Interactive messages with clickable buttons are not available.\n\n8. Verification features like the WhatsApp Blue Tick are not accessible.\n\nSo, how can businesses overcome these limitations of the WhatsApp Business App?",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**7. Introduction to the WhatsApp Business API**\nTo address the limitations of the WhatsApp Business App, Meta introduced the WhatsApp Business API in 2018. This solution is designed for medium and large businesses that want to communicate with customers on a much larger scale.\n\nThe WhatsApp Business API is a powerful tool for reaching global audiences and managing customer interactions efficiently. However, to use it, businesses typically need to work with an official WhatsApp Business Solution Provider, such as Yugme Boom.\n\nThis is because WhatsApp does not provide a direct application or interface for using the API. Instead, platforms like Yugme Boom offer the tools and dashboard required to manage WhatsApp communication effectively.\n\nWith Yugme Boom, businesses can:\n\n1. Send WhatsApp broadcasts to a large number of opted-in users at once\n\n2. Automate notifications for events such as order confirmations, payment reminders, and delivery updates\n\n3. Add multiple live chat agents to manage customer support\n\n4. Implement AI-powered WhatsApp chatbots to automate responses\n\n5. Run Click-to-WhatsApp advertisements to attract new customers\n\n6. Apply for the WhatsApp Blue Tick verification for business credibility\n\nAnd much more.\n\nTo get started with the WhatsApp Business API through Yugme Boom, simply sign up on the Yugme Boom platform, create a free account, and begin exploring its features.",
+                "image_title": null
+              }
+            ]
+          },
+          "definition": {
+            "id": 14,
+            "name": "blog-description",
+            "slug": "blog-description",
+            "fields": [
+              {
+                "key": "description",
+                "type": "array",
+                "label": "description",
+                "children": [
+                  {
+                    "key": "content",
+                    "type": "richtext",
+                    "label": "Content",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "image",
+                    "type": "image",
+                    "label": "Add Image",
+                    "required": false,
+                    "max_length": null
+                  },
+                  {
+                    "key": "image_title",
+                    "type": "text",
+                    "label": "Add Image Title",
+                    "required": false,
+                    "max_length": 150
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "description.*.image": "nullable|string",
+              "description.*.content": "required|string",
+              "description.*.image_title": "nullable|string|max:150"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-03-03T06:27:17.000000Z",
+            "updated_at": "2026-02-25T10:47:30.000000Z"
+          }
+        },
+        {
+          "id": 5424,
+          "position": 4,
+          "data": {
+            "title": "Frequently Asked Questions About WhatsApp Login",
+            "questions": [
+              {
+                "answer": "You need your phone initially to verify and link your account to WhatsApp Web. Once the device is successfully linked, you can continue using WhatsApp Web even if your phone is not nearby.",
+                "question": "Can I use WhatsApp Web without my phone nearby?"
+              },
+              {
+                "answer": "Yes. WhatsApp now allows users to log in using their phone number. Simply select “Link with phone number” on web.whatsapp.com. However, your phone will still be required during the initial verification.",
+                "question": "Is it possible to log in to WhatsApp Web without scanning a QR code?"
+              },
+              {
+                "answer": "Yes. WhatsApp supports using one account on up to four linked devices along with your primary phone.",
+                "question": "Can I use WhatsApp on more than one device?"
+              },
+              {
+                "answer": "For the regular WhatsApp app, your number can be used on one main phone and up to four linked devices. Businesses that need access for many users can use the WhatsApp Business API through platforms such as Yugme Boom.",
+                "question": "Can the same WhatsApp number be used on multiple phones?"
+              },
+              {
+                "answer": "Open WhatsApp on your phone, go to Settings, select Linked Devices, and tap Link a Device. Then visit web.whatsapp.com on your computer and scan the QR code displayed on the screen.",
+                "question": "How can I log in to WhatsApp through a web browser?"
+              },
+              {
+                "answer": "WhatsApp Web runs directly in a web browser, while WhatsApp Desktop is a dedicated application for Windows or Mac. Both support login through QR code and phone number.",
+                "question": "What is the difference between WhatsApp Web and WhatsApp Desktop?"
+              },
+              {
+                "answer": "Yes, it works well for small businesses that manage a limited number of messages. However, businesses handling a high volume of conversations or needing automation may benefit from using the WhatsApp Business API through platforms like Yugme Boom.",
+                "question": "Is the WhatsApp Business App suitable for businesses?"
+              },
+              {
+                "answer": "Click the three-dot menu in WhatsApp Web and select Log out. You can also log out remotely by going to Settings \u003E Linked Devices on your phone, selecting the device, and choosing Log Out.",
+                "question": "How can I log out of WhatsApp Web?"
+              },
+              {
+                "answer": "Yes, by selecting “Keep me signed in” during login. This option should only be used on personal devices. For security reasons, always log out from shared or public computers.",
+                "question": "Can I remain logged in to WhatsApp Web?"
+              },
+              {
+                "answer": "Yes. WhatsApp Web uses end-to-end encryption. To maintain security, use trusted devices, enable two-factor authentication, review linked devices regularly, and avoid logging in on unsecured public networks.",
+                "question": "Is logging in to WhatsApp Web secure?"
+              },
+              {
+                "answer": "Yes. Messages automatically sync across all connected devices, allowing you to use both simultaneously.",
+                "question": "Can I use WhatsApp Web and my phone at the same time?"
+              },
+              {
+                "answer": "Try checking your internet connection, clearing your browser cache and cookies, updating the WhatsApp app, using a different browser, re-linking your device from Linked Devices, temporarily disabling VPN or firewall, or restarting both your phone and computer.",
+                "question": "What should I do if WhatsApp Web login is not working?"
+              }
+            ],
+            "description": "This section answers common questions about WhatsApp login, including how to use WhatsApp Web and Desktop, device limits, security, and troubleshooting login issues."
+          },
+          "definition": {
+            "id": 21,
+            "name": "index faq",
+            "slug": "index-faq",
+            "fields": [
+              {
+                "key": "title",
+                "type": "text",
+                "label": "Title",
+                "required": true,
+                "translate": true,
+                "max_length": null
+              },
+              {
+                "key": "description",
+                "type": "textarea",
+                "label": "Description",
+                "required": true,
+                "translate": true,
+                "max_length": null
+              },
+              {
+                "key": "questions",
+                "type": "array",
+                "label": "Questions",
+                "children": [
+                  {
+                    "key": "question",
+                    "type": "text",
+                    "label": "Question",
+                    "required": true,
+                    "translate": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "answer",
+                    "type": "textarea",
+                    "label": "Answer",
+                    "required": true,
+                    "translate": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "title": "required|string",
+              "description": "required|string",
+              "questions.*.answer": "required|string",
+              "questions.*.question": "required|string"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": [
+              "title",
+              "description",
+              "questions.*.question",
+              "questions.*.answer"
+            ],
+            "is_default": false,
+            "created_at": "2026-03-20T10:06:24.000000Z",
+            "updated_at": "2026-02-26T02:26:45.000000Z"
+          }
+        },
+        {
+          "id": 5425,
+          "position": 5,
+          "data": {
+            "image": "https://yugme.s3.ap-south-1.amazonaws.com/media/org_/dd7fec99-7f8c-45bd-b391-c9edf16909a8.png",
+            "index": true,
+            "title": "WhatsApp Login , Easy Guide to Using WhatsApp Web",
+            "keywords": "Whatsapp login",
+            "canonical": "https://www.boom.yugme.com/blog/whatsapp-login-easy-guide-to-using-whatsapp",
+            "description": "This guide shows how to log in and use WhatsApp Web and Desktop easily on your computer."
+          },
+          "definition": {
+            "id": 32,
+            "name": "seo component",
+            "slug": "seo-component",
+            "fields": [
+              {
+                "key": "title",
+                "type": "textarea",
+                "label": "Enter Title",
+                "required": true,
+                "max_length": 60
+              },
+              {
+                "key": "description",
+                "type": "textarea",
+                "label": "Enter Description",
+                "required": true,
+                "max_length": 160
+              },
+              {
+                "key": "canonical",
+                "type": "url",
+                "label": "Enter Canonical URL",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "index",
+                "type": "boolean",
+                "label": "Set Index",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "keywords",
+                "type": "textarea",
+                "label": "Enter Keywords",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "image",
+                "type": "image",
+                "label": "Add Image",
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "image": "required|string",
+              "index": "required|boolean",
+              "title": "required|string|max:60",
+              "keywords": "required|string",
+              "canonical": "required|url",
+              "description": "required|string|max:160"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-03-06T10:40:56.000000Z",
+            "updated_at": "2026-02-28T12:03:51.000000Z"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "id": 7,
+      "name": "footer",
+      "type": "footer",
+      "is_global": true,
+      "is_active": true,
+      "endpoint_id": null,
+      "components": [
+        {
+          "id": 355,
+          "position": 0,
+          "data": {
+            "url": "https://boom.yugme.com/"
+          },
+          "definition": {
+            "id": 5,
+            "name": "header footer logo",
+            "slug": "header-footer-logo",
+            "fields": [
+              {
+                "key": "url",
+                "type": "url",
+                "label": "Logo Url"
+              }
+            ],
+            "validation_rules": {
+              "url": "required|string"
+            },
+            "allowed_layout_types": [
+              "footer",
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:25:34.000000Z",
+            "updated_at": "2026-02-24T11:25:34.000000Z"
+          }
+        },
+        {
+          "id": 356,
+          "position": 1,
+          "data": {
+            "footer_toc": [
+              {
+                "url": "/pages/terms-of-service",
+                "title": "Terms of Service"
+              },
+              {
+                "url": "/pages/privacy-policy",
+                "title": "Privacy Policy"
+              },
+              {
+                "url": "/pages/refund-policy",
+                "title": "Refund Policy"
+              }
+            ],
+            "description": "The most powerful WhatsApp marketing and automation platform. \nTransform how you connect with customers.",
+            "social_links": [
+              {
+                "icon": "Twitter",
+                "link": "https://www.twitter.com/yugmedeals",
+                "brand": "Twitter"
+              },
+              {
+                "icon": "Linkedin",
+                "link": "https://www.linkedin.com/company/yugmedeals",
+                "brand": "Linkedin"
+              },
+              {
+                "icon": "Instagram",
+                "link": "https://www.instagram.com/yugmedeals",
+                "brand": "Instagram"
+              },
+              {
+                "icon": "Facebook",
+                "link": "https://www.facebook.com/yugmedealsoffical",
+                "brand": "Facebook"
+              }
+            ],
+            "footer_others": [
+              {
+                "links": [
+                  {
+                    "url": "#features",
+                    "name": "Features"
+                  },
+                  {
+                    "url": "/pricing",
+                    "name": "Pricing"
+                  },
+                  {
+                    "url": "#",
+                    "name": "API"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Integrations"
+                  },
+                  {
+                    "url": "/config-whatsapp-chat",
+                    "name": "Generate WhatsApp Button"
+                  },
+                  {
+                    "url": "/whatsapp-link-generator",
+                    "name": "Generate WhatsApp Link"
+                  }
+                ],
+                "title": "product"
+              },
+              {
+                "links": [
+                  {
+                    "url": "/blog",
+                    "name": "Blog"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Help Center"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Documentation"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Guides"
+                  }
+                ],
+                "title": "resources"
+              },
+              {
+                "links": [
+                  {
+                    "url": "#",
+                    "name": "About"
+                  },
+                  {
+                    "url": "#contact",
+                    "name": "Contact"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Careers"
+                  },
+                  {
+                    "url": "/pages/terms-of-service",
+                    "name": "Terms of Service"
+                  },
+                  {
+                    "url": "/pages/privacy-policy",
+                    "name": "Privacy Policy"
+                  },
+                  {
+                    "url": "/pages/refund-policy",
+                    "name": "Refund Policy"
+                  }
+                ],
+                "title": "company"
+              }
+            ]
+          },
+          "definition": {
+            "id": 4,
+            "name": "index footer",
+            "slug": "index-footer",
+            "fields": [
+              {
+                "key": "footer_others",
+                "type": "array",
+                "label": "Footer Others",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "links",
+                    "type": "array",
+                    "label": "Footer Links",
+                    "children": [
+                      {
+                        "key": "name",
+                        "type": "text",
+                        "label": "Enter name"
+                      },
+                      {
+                        "key": "url",
+                        "type": "text",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "key": "social_links",
+                "type": "array",
+                "label": "Social Links",
+                "children": [
+                  {
+                    "key": "brand",
+                    "type": "text",
+                    "label": "Brand Name",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "icon",
+                    "type": "text",
+                    "label": "Icon",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "link",
+                    "type": "url",
+                    "label": "Link",
+                    "required": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "description",
+                "type": "textarea",
+                "label": "Description",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "footer_toc",
+                "type": "array",
+                "label": "Footer TOC",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "url",
+                    "type": "text",
+                    "label": "URL",
+                    "required": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "description": "required|string",
+              "footer_toc.*.url": "required|string",
+              "footer_toc.*.title": "required|string",
+              "social_links.*.icon": "required|string",
+              "social_links.*.link": "required|url",
+              "social_links.*.brand": "required|string",
+              "footer_others.*.title": "required|string",
+              "footer_others.*.links.*.url": "required|string",
+              "footer_others.*.links.*.name": "required|string"
+            },
+            "allowed_layout_types": [
+              "footer"
+            ],
+            "translatable_fields": null,
+            "is_default": true,
+            "created_at": "2026-02-26T06:12:39.000000Z",
+            "updated_at": "2026-02-22T12:12:06.000000Z"
+          }
+        }
+      ],
+      "created_at": "2026-02-26T06:12:44.000000Z",
+      "updated_at": "2026-02-26T06:12:44.000000Z"
+    }
+  }
+}
